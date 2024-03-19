@@ -1,5 +1,6 @@
 package com.example.quoteapp.presentation
 
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -24,9 +25,12 @@ import com.example.quoteapp.domain.model.Quote
 @Composable
 fun RandomQuoteScreen(quote: Quote) {
     Column(
+
         modifier = Modifier
             .fillMaxSize()
-            .padding(horizontal = 16.dp)
+            .padding(horizontal = 16.dp),
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.Center
     ) {
         quote.tags.forEach {tag->
             AssistChip(onClick = { /*TODO*/ },
