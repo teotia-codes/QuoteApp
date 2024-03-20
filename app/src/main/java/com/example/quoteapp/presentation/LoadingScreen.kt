@@ -15,6 +15,7 @@ import androidx.compose.ui.unit.dp
 @Composable
 fun LoadingScreen(modifier: Modifier) {
     Box(
+        //this will be just a loading indicator act as a refresher while api fetches the quotes
         modifier= modifier.fillMaxSize().padding(),
         contentAlignment = Alignment.Center) {
         CircularProgressIndicator(
